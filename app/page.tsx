@@ -1,7 +1,7 @@
 // @ts-ignore
 "use client";
 import { useEffect } from "react";
-
+import { Adsense } from "@ctrl/react-adsense";
 export default function Home() {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -32,6 +32,15 @@ export default function Home() {
         data-ad-client="ca-pub-4293091400623161"
         data-ad-slot="5979959419"
       ></ins>
+      <div className="text-center adsbygoogle my-3">
+        <Adsense
+          client="ca-pub-4293091400623161"
+          slot="5979959419"
+          style={{ display: "block" }}
+          layout="in-article"
+          format="fluid"
+        />
+      </div>
     </main>
   );
 }
