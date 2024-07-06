@@ -1,5 +1,8 @@
+// RootLayout.tsx
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,6 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="google-adsense-account" content="ca-pub-4293091400623161" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4293091400623161"
+          crossOrigin="anonymous"
+        ></script>
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );
